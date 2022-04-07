@@ -56,9 +56,25 @@ def exercise6():
     bird.setTail(4, numberRed, numberGreen, numberBlue)
     sleep(4)
     bird.stopAll()
-    
+
+def exercise7():
+    userResponseLength = input("How long are the sides?")
+    sideLength = int(userResponseLength)
+    bird.setMove('F', sideLength, 70)
+    bird.setTail(1, 100, 0, 0)
+    bird.setTurn('R', 90, 70)
+    bird.setMove('F', sideLength, 70)
+    bird.setTail(2, 100, 100, 0)
+    bird.setTurn('R', 90, 70)
+    bird.setMove('F', sideLength, 70)
+    bird.setTail(3, 100, 100, 100)
+    bird.setTurn('R', 90, 70)
+    bird.setMove('F', sideLength, 70)
+    bird.setTail(4, 0, 100, 100)
+    bird.setTurn('R', 90, 70)
+    bird.stopAll()
 
 def stop():
     bird.stopAll()
 
-exercise6()
+exercise7()

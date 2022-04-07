@@ -36,16 +36,11 @@ def example():
     bird.setTurn('R', 60, 80)
     bird.setMove('B', 70, 80)
 
-#_______Lesson 2 start_______
-
-def exercise8Example():
-    print(bird.getDistance())
-
-def exercise8(): #longest distance I got is 106 cm, shortest is 2 cm
-    print("Distance: ", bird.getDistance())
-
-def exercise9():
-    bird.getButton('A')
-    print(bird.getButton('A'))
+def drawstar():
+    for x in range(5):
+        bird.setMove('F', 10, 60)
+        bird.setTurn('R', 144, 60)
     
-exercise9()
+    
+    
+drawstar()

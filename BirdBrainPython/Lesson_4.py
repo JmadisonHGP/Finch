@@ -95,5 +95,5 @@ def exercise8():
         sleep(0.5)
         bird.stopAll()
         
-exercise8()
+exercise3()
 
