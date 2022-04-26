@@ -4,12 +4,12 @@ from time import sleep
 
 bird = Finch()
 
-def exercise1():
+def exercise1(): # Make one wheels speed positive and the other negative
     bird.setMotors(-50,-75)
     sleep(1)
     bird.stop()
 
-def exercise2():
+def exercise2(): # Have the user decide the speed of each wheel, and have the finch move to those speeds
     rightSpeed = input("How fast should the right wheel go?")
     speedRight = int(rightSpeed)
     leftSpeed = input("How fast should the left wheel go?")
@@ -18,7 +18,7 @@ def exercise2():
     sleep(1)
     bird.stop()
 
-def exercise3():
+def exercise3(): # Make a figure 8 with the finch
     bird.setMotors(10, 10)
     sleep(2)
     bird.setMotors(65, 5)
@@ -31,7 +31,7 @@ def exercise3():
     sleep(1)
     bird.stop()
 
-def exercise4():
+def exercise4(): # If the user inputs "P" then the beak will turn blue. If it's not, deliver a message
     color = input("Please enter a letter: ")
     if (color == 'p'):
         bird.setBeak(0, 100, 0)
@@ -40,7 +40,7 @@ def exercise4():
     sleep(1)
     bird.stopAll()
 
-def exercise5():
+def exercise5(): # if the user inputs r then the finchs right motor will move. If else, the left will
     direction = input("l or r: ")
     if (direction == 'r'):
         bird.setMotors(0, 20)
@@ -49,7 +49,7 @@ def exercise5():
     sleep(1)
     bird.stopAll()
 
-def exercise6():
+def exercise6(): # have the user enter a speed between 100 & -100. If the speed inputed doesn't match the range, print a message. If it does, the set the finches speed 
     userResponse = input("please enter a speed (-100 to 100): ")
     speed = int(userResponse)
     if (speed >= -100) and (speed <= 100):
@@ -60,7 +60,7 @@ def exercise6():
         print("that speed is not valid!")
     
 
-def exercise7():
+def exercise7(): # Same as last one, but set the right wheels speed x2.
     userResponse = input("please enter a speed (-50 to 50): ")
     speed = int(userResponse)
     if (speed >= -50) and (speed <= 50):
@@ -70,7 +70,7 @@ def exercise7():
     else:
         print("that speed is not valid!")
 
-def exercise8():
+def exercise8(): # Give the finch 2 dances; if 1 is typed then do dance 1, if not then do dance 2
     danceType = input("which dance, 1 or 2: ")
     dance = int(danceType)
     if (dance == 1):
